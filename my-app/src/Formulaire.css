@@ -1,0 +1,102 @@
+/* Dark + smooth + normal (works with your existing classNames) */
+
+body{
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background: #0b1220;
+  color: #e5e7eb;
+}
+
+/* page spacing */
+.container.my-5{
+  max-width: 900px;
+  margin: 48px auto;
+  padding: 24px;
+}
+
+/* title */
+.text-center.fw-bold{
+  text-align: center;
+  font-size: clamp(26px, 3.8vw, 42px);
+  font-weight: 800;
+  margin: 0 0 18px;
+  color: #f3f4f6;
+}
+
+/* form card */
+form.p-4.border.rounded.shadow{
+  max-width: 520px;
+  margin: 0 auto;
+  padding: 22px;
+  border-radius: 16px;
+  border: 1px solid rgba(255,255,255,0.10);
+  background: rgba(255,255,255,0.06);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 18px 50px rgba(0,0,0,0.45);
+}
+
+/* spacing per field */
+.mb-3{
+  margin-bottom: 14px;
+}
+
+/* labels */
+.form-label.fw-bold{
+  display: block;
+  margin: 0 0 8px;
+  font-size: 13px;
+  font-weight: 700;
+  color: rgba(229,231,235,0.85);
+}
+
+/* inputs */
+.form-control{
+  width: 100%;
+  box-sizing: border-box;
+  height: 44px;
+  padding: 0 12px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.10);
+  background: rgba(15, 23, 42, 0.65);
+  color: #e5e7eb;
+  outline: none;
+  transition: border-color 160ms ease, box-shadow 160ms ease, transform 160ms ease;
+}
+
+.form-control::placeholder{
+  color: rgba(229,231,235,0.40);
+}
+
+.form-control:focus{
+  border-color: rgba(99, 102, 241, 0.65);
+  box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.18);
+}
+
+/* button */
+.btn.btn-primary.w-100{
+  width: 100%;
+  height: 46px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 15px;
+  color: #ffffff;
+  background: #4f46e5;
+  transition: transform 160ms ease, filter 160ms ease;
+}
+
+.btn.btn-primary.w-100:hover{
+  filter: brightness(1.06);
+  transform: translateY(-1px);
+}
+
+.btn.btn-primary.w-100:active{
+  transform: translateY(0px);
+}
+
+/* mobile */
+@media (max-width: 560px){
+  .container.my-5{ margin: 24px auto; padding: 16px; }
+  form.p-4.border.rounded.shadow{ padding: 16px; }
+}
