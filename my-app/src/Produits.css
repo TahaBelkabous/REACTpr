@@ -11,8 +11,8 @@ body {
 .main-title {
     text-align: center;
     padding: 15px;
-    border: 1px solid #ccc;
-    background-color: white;
+    border: 1px solid #272424;
+    background-color: rgb(100, 97, 100);
     margin-bottom: 30px;
 }
 
@@ -45,10 +45,11 @@ body {
 .product-title {
     font-weight: bold;
     margin-bottom: 10px;
+    color: black;
 }
 
 .product-price {
-    color: #6c757d;
+    color: #171818;
     margin-bottom: 15px;
 }
 
@@ -65,3 +66,18 @@ body {
     background-color: #084298;
 }
 
+.search-center{
+  display:flex;
+  justify-content:center;
+  margin: 24px 0;
+}
+.search-input{
+  width: min(520px, 92%);
+  padding: 12px 14px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  outline: none;
+}
+.search-input:focus{
+  border-color: #999;
+}
